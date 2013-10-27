@@ -154,8 +154,19 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <h3>Оп!</h3>
-            <a href="#top" class="btn btn-lg btn-default">Твитни за Оп!</a>
-            <a href="#top" class="btn btn-lg btn-primary">Сподели на Фејсбук</a>
+            <a class="btn btn-lg btn-primary" href=""
+               onclick="window.open(
+               'https://twitter.com/share?text=TEST&url='+encodeURIComponent(location.href),
+               'twitter-share-dialog',
+               'width=626,height=436');
+               return false;">Твитни за Оп!</a>
+            <a class="btn btn-lg btn-primary" href=""
+                onclick="
+                   window.open(
+                   'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                   'facebook-share-dialog',
+                   'width=626,height=436');
+                   return false;">Сподели на Фејсбук</a>
           </div>
         </div>
       </div>
@@ -215,8 +226,7 @@
           }
         });
       });
-    </script>
-
+  </script>
   </body>
 
 </html>
